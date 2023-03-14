@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | FREQ Ear Training</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=540 height=960 style="width: 540px; height: 960px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=1080 height=1920 style="width: 1080px; height: 1920px; background: #231F20"></canvas>
     <script src="Build/WebGL Build Mobile.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/WebGL Build Mobile.data.unityweb",
-        frameworkUrl: "Build/WebGL Build Mobile.framework.js.unityweb",
-        codeUrl: "Build/WebGL Build Mobile.wasm.unityweb",
+        dataUrl: "Build/WebGL Build Mobile.data",
+        frameworkUrl: "Build/WebGL Build Mobile.framework.js",
+        codeUrl: "Build/WebGL Build Mobile.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "FourFox",
         productName: "FREQ Ear Training",
